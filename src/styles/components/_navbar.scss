@@ -1,0 +1,47 @@
+@use "../utils/colors" as clr;
+nav {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  font-weight: 200;
+  font-size: 1.2rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: clr.$primary__1000;
+  box-shadow: clr.$box_shadow_dark;
+  .logo {
+    background-image: url("/assets/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    aspect-ratio: 1;
+  }
+  ul {
+    height: 100%;
+    color: rgba(white, 0.9);
+    display: flex;
+    gap: 2em;
+    padding-right: 7vw;
+    align-items: center;
+    li {
+      a {
+        color: inherit;
+        transition: all 100ms ease-in;
+        position: relative;
+        overflow: hidden;
+        &:active {
+          color: clr.$primary__400;
+        }
+        &:hover {
+          color: clr.$primary__200;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

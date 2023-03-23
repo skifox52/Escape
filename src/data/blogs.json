@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Les 10 meilleures destinations de voyage pour les amoureux de la nature",
+    "content": " Un article qui met en avant les destinations les plus spectaculaires pour les amoureux de la nature. Il peut s'agir de parcs nationaux, de montagnes, de forêts ou de plages sauvages.",
+    "image": "/assets/blog/blog_1.jpg"
+  },
+  {
+    "title": "Comment économiser de l'argent lors de votre prochain voyage",
+    "content": " Un article qui propose des astuces et des conseils pour économiser de l'argent sur les vols, les hébergements, les repas et les activités pendant les voyages.",
+    "image": "/assets/blog/blog_2.jpg"
+  },
+  {
+    "title": "Les villes les plus romantiques à visiter en Europe",
+    "content": "Un article qui présente les villes européennes les plus romantiques à visiter, avec des conseils pour les activités et les sites touristiques à ne pas manquer. Cela peut inclure des destinations telles que Paris, Venise, Prague et Barcelone.",
+    "image": "/assets/blog/blog_3.jpg"
+  }
+]

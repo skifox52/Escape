@@ -1,0 +1,59 @@
+@use "../components/navbar";
+@use "../components/footer";
+@use "../utils/colors" as clr;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-family: "Dosis", sans-serif;
+  height: 100%;
+}
+nav {
+  position: static;
+}
+body {
+  background: clr.$primary__200;
+  .blogs {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .single__blog {
+      color: rgba(white, 0.8);
+      width: 100%;
+      min-height: 20rem;
+      border: 1px solid hsl(0, 0%, 70%);
+      padding: 1rem;
+      box-shadow: clr.$box_shadow_dark;
+      background: clr.$primary__1000;
+      h1 {
+        text-align: center;
+        font-size: clamp(1.5rem, 2.2rem, 2.5vw);
+        margin-bottom: 1rem;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        p {
+          font-size: clamp(1rem, 2vw, 3rem);
+        }
+        img {
+          height: 14rem;
+          object-fit: cover;
+          object-position: center;
+          border: 1px solid rgba(white, 0.2);
+          box-shadow: clr.$box_shadow_dark;
+        }
+      }
+    }
+  }
+}

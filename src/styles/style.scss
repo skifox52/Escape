@@ -1,0 +1,53 @@
+@use "./components/navbar";
+@use "./components/footer";
+@use "./utils/colors" as clr;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-family: "Dosis", sans-serif;
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 100%;
+  .hero__section {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(black, 0.4);
+    }
+    h1 {
+      position: absolute;
+      font-size: 10vw;
+      top: 35vh;
+      left: 10%;
+      color: white;
+      z-index: 1;
+      font-weight: 200;
+    }
+    h4 {
+      @extend h1;
+      font-size: 4vw;
+      top: 50vh;
+      color: rgba(white, 0.8);
+    }
+  }
+}

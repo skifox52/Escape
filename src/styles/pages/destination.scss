@@ -1,0 +1,68 @@
+@use "../components/navbar";
+@use "../components/footer";
+@use "../utils/colors" as clr;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-family: "Dosis", sans-serif;
+  height: 100%;
+}
+body {
+  background: clr.$primary__200;
+  nav {
+    position: static;
+  }
+  .destinations {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    .dest__card {
+      background: clr.$primary__1000;
+      overflow: hidden;
+      color: rgba(white, 0.9);
+      border: 1px solid clr.$primary__400;
+      box-shadow: clr.$box_shadow_dark;
+      h2 {
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: clr.$primary__200;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgba(white, 0.9);
+        padding-inline: 2rem;
+        &:last-child {
+          letter-spacing: 0;
+          color: rgba(white, 0.9);
+          -webkit-text-fill-color: rgba(white, 0.9);
+          -webkit-text-stroke: 0px rgba(white, 0.9);
+          font-weight: 400;
+        }
+      }
+      h3 {
+        padding-inline: 2rem;
+        letter-spacing: 1px;
+        font-weight: 200;
+      }
+      img {
+        cursor: pointer;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        opacity: 0.5;
+        transition: opacity 400ms ease-in-out;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

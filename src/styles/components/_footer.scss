@@ -1,0 +1,46 @@
+.footer__container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 10vh;
+  background: hsl(161, 20%, 33%);
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4rem;
+  gap: 1rem;
+  .svg__container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      fill: transparent;
+      background-color: transparent;
+      width: 10%;
+      aspect-ratio: 3/2;
+      object-fit: contain;
+      mix-blend-mode: color-burn;
+      object-position: center;
+    }
+  }
+  .btn__container {
+    a {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.4rem 1rem;
+      background: transparent;
+      outline: none;
+      border: 2px solid rgba(black, 0.95);
+      color: rgba(black, 0.95);
+      transition: all 100ms ease-in;
+      cursor: pointer;
+      &:hover {
+        background: rgba(black, 0.95);
+        color: white;
+      }
+    }
+  }
+}

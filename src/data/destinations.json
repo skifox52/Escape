@@ -1,0 +1,38 @@
+[
+  {
+    "title": "France",
+    "provider": "Air Algerie",
+    "photo": "/assets/destination/france.jpg",
+    "prix": "55 000 DZD"
+  },
+  {
+    "title": "Turquie",
+    "provider": "Turkish Airlines",
+    "photo": "/assets/destination/turquie.jpg",
+    "prix": "75 000 DZD"
+  },
+  {
+    "title": "Qatar",
+    "provider": "Qatar Airlines",
+    "photo": "/assets/destination/qatar.jpg",
+    "prix": "98 000 DZD"
+  },
+  {
+    "title": "Canada",
+    "provider": "Air France",
+    "photo": "/assets/destination/canada.jpg",
+    "prix": "75 000 DZD"
+  },
+  {
+    "title": "Japon",
+    "provider": "Fly Emirates",
+    "photo": "/assets/destination/japon.jpg",
+    "prix": "115 000 DZD"
+  },
+  {
+    "title": "Islande",
+    "provider": "Aigle Azur",
+    "photo": "/assets/destination/island.jpg",
+    "prix": "102 500 DZD"
+  }
+]
