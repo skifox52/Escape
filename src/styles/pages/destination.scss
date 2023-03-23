@@ -1,6 +1,7 @@
 @use "../components/navbar";
 @use "../components/footer";
 @use "../utils/colors" as clr;
+@use "../utils/mixins" as mxn;
 *,
 *::before,
 *::after {
@@ -17,6 +18,11 @@ html {
 }
 body {
   background: clr.$primary__200;
+  min-height: 100vh;
+  .footer__container {
+    position: static;
+    bottom: 0;
+  }
   nav {
     position: static;
   }
@@ -25,7 +31,15 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    min-height: 100vh;
+    padding-bottom: 10vh;
     gap: 2rem;
+    @include mxn.md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mxn.xs {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .dest__card {
       background: clr.$primary__1000;
       overflow: hidden;

@@ -36,8 +36,8 @@ body {
     }
     h1 {
       position: absolute;
-      font-size: 10vw;
-      top: 35vh;
+      font-size: calc(5rem + 2vw);
+      top: 35%;
       left: 10%;
       color: white;
       z-index: 1;
@@ -45,8 +45,8 @@ body {
     }
     h4 {
       @extend h1;
-      font-size: 4vw;
-      top: 50vh;
+      font-size: calc(1rem + 0.5vw);
+      top: calc(50% + 1.5vw);
       color: rgba(white, 0.8);
     }
   }

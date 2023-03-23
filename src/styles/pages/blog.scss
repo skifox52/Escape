@@ -1,6 +1,7 @@
 @use "../components/navbar";
 @use "../components/footer";
 @use "../utils/colors" as clr;
+@use "../utils/mixins" as mxn;
 *,
 *::before,
 *::after {
@@ -43,6 +44,9 @@ body {
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
+        @include mxn.sm {
+          flex-direction: column;
+        }
         p {
           font-size: clamp(1rem, 2vw, 3rem);
         }
@@ -52,6 +56,9 @@ body {
           object-position: center;
           border: 1px solid rgba(white, 0.2);
           box-shadow: clr.$box_shadow_dark;
+          @include mxn.sm {
+            width: 100%;
+          }
         }
       }
     }

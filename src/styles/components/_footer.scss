@@ -1,3 +1,5 @@
+@use "../utils/mixins" as mxn;
+
 .footer__container {
   position: absolute;
   z-index: 1;
@@ -10,16 +12,21 @@
   justify-content: space-between;
   padding-inline: 4rem;
   gap: 1rem;
+  @include mxn.sm {
+    padding-inline: 0.6rem;
+  }
+
   .svg__container {
     height: 100%;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
     img {
       fill: transparent;
       background-color: transparent;
-      width: 10%;
+      width: 12%;
       aspect-ratio: 3/2;
       object-fit: contain;
       mix-blend-mode: color-burn;
@@ -37,6 +44,14 @@
       color: rgba(black, 0.95);
       transition: all 100ms ease-in;
       cursor: pointer;
+      @include mxn.sm {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+      }
+      @include mxn.sm {
+        font-size: 0.5rem;
+        padding: 0.1rem 0.25rem;
+      }
       &:hover {
         background: rgba(black, 0.95);
         color: white;
